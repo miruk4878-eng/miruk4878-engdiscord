@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTの家 | Portfolio</title>
+
+  <!-- Google Fonts: 日本語も読みやすいフォントを使用します -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome: アイコン表示に使用します -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="CSSPT.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true">
+    <span></span>
+  </div>
+
+  <div class="paint-backdrop" aria-hidden="true">
+    <span class="paint-stroke stroke-one"></span>
+    <span class="paint-stroke stroke-two"></span>
+    <span class="paint-stroke stroke-three"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <a class="logo" href="#top" aria-label="PTの家 トップへ">
+        <span class="logo-mark">PT</span>
+        <span>PTの家</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#about">自己紹介</a>
+        <a href="#skills">ゲーム一覧</a>
+        <a href="#contact">お問い合わせ</a>
+        <button class="theme-toggle" type="button" aria-label="ダークモード切り替え">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Personal Portfolio</p>
+        <h1>PTの家</h1>
+        <p class="hero-copy">
+          ゲーム好きが出会う場所。みんなで思い出を作ろう。
+        </p>
+        <div class="hero-actions">
+          <!-- ここを本物のサーバー招待リンクに変更してください -->
+          <a class="btn primary" href="https://discord.gg/your-invite-code" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-user-plus"></i>
+            サーバーに参加
+          </a>
+          <a class="btn secondary" href="#skills">
+            <i class="fa-solid fa-gamepad"></i>
+            ゲームを見る
+          </a>
+        </div>
+      </div>
+      <div class="hero-card reveal delay-1">
+        <p>Focus</p>
+        <strong>Game / Community / Web</strong>
+        <span>一緒に遊べる場所と、見やすい情報をまとめたポートフォリオ。</span>
+      </div>
+    </section>
+
+    <section class="about section" id="about" data-section-text="Members">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>自己紹介</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="profile-panel reveal">
+            <div class="member-card" aria-live="polite">
+              <div class="member-avatar" id="memberIcon">
+                <i class="fa-solid fa-house-chimney-medical"></i>
+              </div>
+              <h3 id="memberName">PTの家</h3>
+              <p id="memberText">
+                専門性をやさしく届けることを大切にしているポートフォリオです。
+                見やすさ、使いやすさ、信頼感のある表現を軸に、Webサイト制作に取り組んでいます。
+              </p>
+            </div>
+          </div>
+
+          <div class="about-text reveal delay-1">
+            <p>
+              このサイトでは、自己紹介、よく遊んでるゲームをまとめています。
+              みんなで楽しいサーバー作りを目指しています。
+            </p>
+            <div class="stats">
+              <div>
+                <strong>01</strong>
+                <span>メンバー紹介</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>ゲーム一覧</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>サーバー参加</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills" data-section-text="Play">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Games</p>
+          <h2>よくやっているゲーム一覧</h2>
+        </div>
+
+        <div class="skill-grid">
+          <a class="skill-card game-card reveal" href="https://playvalorant.com/ja-jp/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-crosshairs"></i>
+            <h3>VALORANT</h3>
+            <p>チームで連携しながら、正確なエイムと作戦で勝利を目指すタクティカルFPSです。</p>
+            <span>公式サイトへ</span>
+          </a>
+
+          <a class="skill-card game-card reveal delay-1" href="https://www.ubisoft.com/ja-jp/game/rainbow-six/siege" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>RAINBOW SIX SIEGE</h3>
+            <p>壁や床を使った攻防、オペレーターごとの役割が熱い戦略性の高いFPSです。</p>
+            <span>公式サイトへ</span>
+          </a>
+
+          <a class="skill-card game-card reveal delay-2" href="https://www.ea.com/ja-jp/games/apex-legends" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>APEX LEGENDS</h3>
+            <p>個性あるレジェンドを選び、スピード感のあるバトルを楽しめるバトルロイヤルです。</p>
+            <span>公式サイトへ</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" data-section-text="Contact">
+      <div class="section-inner contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>お問い合わせフォーム</h2>
+          <p>
+            ご質問や参加前に聞きたいことがあれば、お気軽にメッセージをお送りください。
+            内容を確認し、折り返しご連絡いたします。
+          </p>
+        </div>
+
+        <form class="contact-form reveal delay-1">
+          <label>
+            お名前
+            <input type="text" name="name" placeholder="山田 太郎" required>
+          </label>
+
+          <label>
+            メールアドレス
+            <input type="email" name="email" placeholder="example@mail.com" required>
+          </label>
+
+          <label>
+            お問い合わせ内容
+            <textarea name="message" rows="5" placeholder="ご相談内容をご入力ください" required></textarea>
+          </label>
+
+          <button class="btn primary form-submit" type="submit">
+            <i class="fa-solid fa-envelope"></i>
+            送信する
+          </button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="ページ上部へ戻る">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 PTの家. All Rights Reserved.</p>
+  </footer>
+
+  <script src="JAVASCRIPTPT.js"></script>
+</body>
+</html>
